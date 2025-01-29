@@ -21,3 +21,18 @@ function BFS(V, E)
                     enqueue(queue, w)
 
 
+// DFS pseudocode
+
+function DFS (V, E)
+    mark each node in V with 0
+    count <- 0
+    for each vertex in V do
+        if vertex is marked then    
+            DFSexplore(vertex)
+
+function DFSexplore(vertex)
+    count <- count + 1
+    mark vertex with count
+    for each edge (vertex, next) do
+        if 'next' is marked with 0 then
+            DFSexplore(next)
