@@ -1,0 +1,23 @@
+pseudocode for an algotrithm to find number of connected components in a graph:
+
+G = (V, E) where G = Graph, V = Vertices and E =  Edges
+
+// BFS pseudocode:
+
+function BFS(V, E)
+    mark each node in V with 0
+    count <- 0, init(queue)
+    for each vertex in V do
+        if vertex is marked 0 then
+            count <- count + 1
+            mark vertex with count
+            push(queue, vertex)
+            while queue is non-empty do
+            u <- pop(queue)
+            for each edge (u, w) adjacent to 'u' do
+                if 'w' is marked with 0 then
+                    count <- count + 1
+                    mark 'w' with count
+                    enqueue(queue, w)
+
+
