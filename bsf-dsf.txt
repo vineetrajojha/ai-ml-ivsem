@@ -2,7 +2,7 @@ pseudocode for an algotrithm to find number of connected components in a graph:
 
 G = (V, E) where G = Graph, V = Vertices and E =  Edges
 
-// BFS pseudocode:
+------- BFS pseudocode -------
 
 function BFS(V, E)
     mark each node in V with 0
@@ -21,7 +21,7 @@ function BFS(V, E)
                     enqueue(queue, w)
 
 
-// DFS pseudocode
+------- DFS pseudocode -------
 
 function DFS (V, E)
     mark each node in V with 0
@@ -36,3 +36,6 @@ function DFSexplore(vertex)
     for each edge (vertex, next) do
         if 'next' is marked with 0 then
             DFSexplore(next)
+
+
+
